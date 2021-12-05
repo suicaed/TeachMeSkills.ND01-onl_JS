@@ -7,3 +7,5 @@ for (let i = 0; i< users.length; i++) {
     sumYoung += users[i].age
   }
 }
+
+console.log(sumYoung)
