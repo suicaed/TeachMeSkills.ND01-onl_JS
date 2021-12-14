@@ -1,4 +1,4 @@
-const avgArrow = () => {
+const avgArrow = (...arguments) => {
   let sum = 0
 
   for (let i = 0; i < arguments.length; i++) {
