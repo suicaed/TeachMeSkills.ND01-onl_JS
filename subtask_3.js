@@ -20,3 +20,5 @@ const fibonachi = n => {
 
   return result
 }
+
+console.log(fibonachi(5))
