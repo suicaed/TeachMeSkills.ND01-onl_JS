@@ -3,7 +3,10 @@ function User (firstName, secondName, age, city) {
   this.secondName = secondName
   this.age = age
   this.city = city
-  this.aboutMe = () => `Hello! My name is ${this.firstName} ${this.secondName}, I'm ${age} yo. Btw I'm from ${city}`
+}
+
+User.prototype.aboutMe = function () {
+  return `Hello! My name is ${this.firstName} ${this.secondName}, I'm ${this.age} yo. Btw I'm from ${this.city}`
 }
 
 const firstUser = new User('Nikola', 'Tesla', 86, 'Smilyan')
