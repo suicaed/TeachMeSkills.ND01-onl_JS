@@ -33,5 +33,4 @@ function addOutputListItem(userData) {
 
   outputList.appendChild(li)
   outputCounter.textContent = `users count: ${users.length}`
-  console.log(users.length)
 }
