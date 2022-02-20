@@ -5,14 +5,12 @@ const inputString = '[{"car": "BMW", "model": "5-series e39"}, {"car": "Honda", 
 const germanCarNames = ['BMW', 'Volkswagen']
 const japaneseCarNames = ['Honda', 'Nissan'];
 
-(async () => {
-  const allCars = JSON.parse(inputString)
+const allCars = JSON.parse(inputString)
 
-  const germanCars = allCars.filter(car => germanCarNames.includes(car.car))
-  const japaneseCars = allCars.filter(car => japaneseCarNames.includes(car.car))
+const germanCars = allCars.filter(car => germanCarNames.includes(car.car))
+const japaneseCars = allCars.filter(car => japaneseCarNames.includes(car.car))
 
-  const germanCarsString = JSON.stringify(germanCars)
-  const japaneseCarsString = JSON.stringify(japaneseCars)
+const germanCarsString = JSON.stringify(germanCars)
+const japaneseCarsString = JSON.stringify(japaneseCars)
 
-  console.log(`\nGerman cars string: ${germanCarsString}\nJapanese cars string: ${japaneseCarsString}`)
-})()
+console.log(`\nGerman cars string:\n${germanCarsString}\n\nJapanese cars string:\n${japaneseCarsString}`)
